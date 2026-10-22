@@ -1,6 +1,6 @@
 """Shared plumbing for the two Pydantic AI backends (Jev and the LLM). Imports of pydantic-ai are LAZY.
 
-STATUS: BUILT AND OFFLINE-TESTED ONLY. Nothing in this repository has been run against Jev or Claude Haiku.
+STATUS: BUILT AND OFFLINE-TESTED ONLY, NOT RUN LIVE. Nothing in this repository has been run against Jev or Claude Haiku.
 Offline tests use stub agents and, where pydantic-ai is installed (Python 3.10+), a FunctionModel that
 imitates a decision model's `provider_details`. How the real services behave is not verified here.
 """

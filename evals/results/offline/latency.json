@@ -2,29 +2,29 @@
   "caveat": "in-process, one machine, no model call; order of magnitude only",
   "meta": {
     "environment": "OFFLINE: no model, no network, no API key; synthetic data only",
-    "git_commit": "b97929a",
+    "git_commit": "cd18619",
     "platform": "macOS-26.7.1",
     "python": "3.14.7",
     "seed": 0
   },
   "mock_cascade_input_gate": {
     "n": 1325,
-    "p50_ms": 0.2657,
-    "p95_ms": 0.3665
+    "p50_ms": 0.2671,
+    "p95_ms": 0.3702
   },
   "rules_action_gate": {
     "n": 1350,
     "p50_ms": 0.0162,
-    "p95_ms": 0.0207
+    "p95_ms": 0.0209
   },
   "rules_input_gate": {
     "n": 1325,
-    "p50_ms": 0.2495,
-    "p95_ms": 0.3509
+    "p50_ms": 0.2504,
+    "p95_ms": 0.35
   },
   "rules_input_gate_with_audit_chain": {
     "n": 1325,
-    "p50_ms": 0.2607,
-    "p95_ms": 0.3608
+    "p50_ms": 0.2631,
+    "p95_ms": 0.3662
   }
 }

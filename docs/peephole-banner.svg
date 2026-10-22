@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" role="img" aria-labelledby="title description">
+  <title id="title">Peephole</title>
+  <desc id="description">Look before you open the door: a typed, confidence-gated semantic gate in front of an agent. It asks typed questions about inputs and actions, escalates when unsure, and fails closed. Built and offline-tested, not run live.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1405"/>
+      <stop offset="0.56" stop-color="#24400a"/>
+      <stop offset="1" stop-color="#84cc16" stop-opacity=".7"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#d9f99d" stop-opacity=".25"/>
+      <stop offset="1" stop-color="#d9f99d" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#060b02" flood-opacity=".38"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="320" rx="24" fill="url(#bg)"/>
+  <circle cx="1040" cy="60" r="230" fill="url(#glow)"/>
+  <g opacity=".2" fill="none" stroke="#d9f99d" stroke-width="1.2">
+    <circle cx="960" cy="190" r="26"/>
+    <circle cx="960" cy="190" r="56"/>
+    <circle cx="960" cy="190" r="92"/>
+    <path d="M780 190h120M1020 190h160"/>
+    <g fill="#d9f99d" stroke="none"><circle cx="780" cy="190" r="5"/><circle cx="1060" cy="190" r="5"/><circle cx="1180" cy="190" r="5"/></g>
+  </g>
+  <g transform="translate(74 68)" filter="url(#shadow)">
+    <rect width="88" height="88" rx="22" fill="#1a2d08" stroke="#bef264" stroke-opacity=".6"/>
+    <g fill="none" stroke="#d9f99d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="26" y="14" width="36" height="60" rx="5"/>
+      <circle cx="44" cy="36" r="8"/>
+      <circle cx="44" cy="36" r="2.5" fill="#d9f99d"/>
+      <path d="M38 56h12"/>
+      <path d="M62 44l6 0"/>
+    </g>
+  </g>
+  <text x="190" y="118" fill="#f7fee7" font-family="Inter, -apple-system, Segoe UI, sans-serif" font-size="56" font-weight="700">Peephole</text>
+  <text x="190" y="162" fill="#d9f99d" font-family="Inter, -apple-system, Segoe UI, sans-serif" font-size="24">Look before you open the door</text>
+  <text x="74" y="250" fill="#ecfccb" font-family="Inter, -apple-system, Segoe UI, sans-serif" font-size="20" opacity=".9">typed semantic gate  ·  confidence-gated  ·  escalate when unsure  ·  fail closed</text>
+  <text x="74" y="286" fill="#bef264" font-family="Inter, -apple-system, Segoe UI, sans-serif" font-size="15" opacity=".85">built and offline-tested, not run live</text>
+</svg>

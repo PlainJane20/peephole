@@ -1,0 +1,31 @@
+name: CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ["3.9", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install --upgrade pip
+      # dev extras: on 3.9 pydantic-ai is skipped by an environment marker (it needs 3.10+); the core runs without it
+      - run: pip install -e ".[dev]"
+      # No network, no keys: every test blocks sockets and removes API keys from the environment.
+      - run: python -m pytest
+      # Offline evals: rules backend and the MockBackend stub ONLY. Exits non-zero if the fail-closed chaos property fails.
+      - run: python -m evals.run_all
+      # The live script's dry run: prints exact call counts per backend, calls nothing, needs no key.
+      - run: python scripts/run_live_eval.py --dry-run
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: eval-results-py${{ matrix.python }}
+          path: evals/results/offline/*.json

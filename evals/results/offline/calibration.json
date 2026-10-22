@@ -286,7 +286,7 @@
   "label": "PLUMBING CHECK ONLY. The MockBackend is a deterministic keyword stub, not Jev and not an LLM; its 'confidence' is a function of keyword counts, not a probability. These numbers verify that the harness, cascade, metrics and audit trail work. They say nothing about how Jev or any model performs.",
   "meta": {
     "environment": "OFFLINE: no model, no network, no API key; synthetic data only",
-    "git_commit": "b97929a",
+    "git_commit": "cd18619",
     "platform": "macOS-26.7.1",
     "python": "3.14.7",
     "seed": 0

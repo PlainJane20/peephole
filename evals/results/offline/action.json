@@ -5,7 +5,7 @@
   },
   "meta": {
     "environment": "OFFLINE: no model, no network, no API key; synthetic data only",
-    "git_commit": "b97929a",
+    "git_commit": "cd18619",
     "platform": "macOS-26.7.1",
     "python": "3.14.7",
     "seed": 0
@@ -658,8 +658,8 @@
     },
     "latency": {
       "n": 270,
-      "p50_ms": 0.0048,
-      "p95_ms": 0.0082
+      "p50_ms": 0.0053,
+      "p95_ms": 0.0096
     },
     "n_ambiguous_labels": 40,
     "n_firm_labels": 230,
@@ -1316,8 +1316,8 @@
     },
     "latency": {
       "n": 270,
-      "p50_ms": 0.017,
-      "p95_ms": 0.0215
+      "p50_ms": 0.0178,
+      "p95_ms": 0.0258
     },
     "n_ambiguous_labels": 40,
     "n_firm_labels": 230,

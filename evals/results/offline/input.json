@@ -5,7 +5,7 @@
   },
   "meta": {
     "environment": "OFFLINE: no model, no network, no API key; synthetic data only",
-    "git_commit": "b97929a",
+    "git_commit": "cd18619",
     "platform": "macOS-26.7.1",
     "python": "3.14.7",
     "seed": 0
@@ -451,7 +451,7 @@
     "latency": {
       "n": 265,
       "p50_ms": 0.0065,
-      "p95_ms": 0.0089
+      "p95_ms": 0.0095
     },
     "n": 265,
     "overall": {
@@ -936,8 +936,8 @@
     },
     "latency": {
       "n": 265,
-      "p50_ms": 0.2574,
-      "p95_ms": 0.349
+      "p50_ms": 0.2635,
+      "p95_ms": 0.4123
     },
     "n": 265,
     "overall": {

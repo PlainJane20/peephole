@@ -2,7 +2,7 @@
   "label": "RULES rows are real numbers for a deterministic, author-written baseline. MOCK/cascade/chaos rows come from a keyword stub and verify plumbing only. NO live Jev or LLM result exists.",
   "meta": {
     "environment": "OFFLINE: no model, no network, no API key; synthetic data only",
-    "git_commit": "b97929a",
+    "git_commit": "cd18619",
     "platform": "macOS-26.7.1",
     "python": "3.14.7",
     "seed": 0

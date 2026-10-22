@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" role="img" aria-labelledby="t d" font-family="Inter, -apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">How Peephole works</title>
+  <desc id="d">Untrusted text or a proposed tool call arrives at the gate. A deterministic hard-deny floor runs first with no model. Then the primary backend, Jev, answers three typed questions in one call, each with a confidence. If the minimum confidence is at or above the single threshold the typed answers map to allow, ask or deny through one table; if it is below, missing or the call fails, the cascade escalates to an LLM, and if no tier is decisive it applies the fail policy to the rules verdict, which is fail-closed by default. Every decision is written to a hash-chained audit log. Built and offline-tested, not run live.</desc>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#4d7c0f"/>
+    </marker>
+    <filter id="sh" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0f172a" flood-opacity=".12"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="640" rx="20" fill="#f8fafc"/>
+
+  <text x="600" y="46" text-anchor="middle" font-size="26" font-weight="700" fill="#0f172a">How Peephole works</text>
+  <text x="600" y="74" text-anchor="middle" font-size="15" fill="#475569">A gate that asks typed questions, trusts its answer only when it is sure, and otherwise escalates.</text>
+
+  <!-- ROW 1 -->
+  <g filter="url(#sh)"><rect x="36" y="100" width="250" height="140" rx="14" fill="#ffffff" stroke="#65a30d" stroke-width="2.5"/></g>
+  <text x="161" y="132" text-anchor="middle" font-size="12" font-weight="700" fill="#65a30d" letter-spacing="1.5">1  THE INPUT</text>
+  <text x="161" y="162" text-anchor="middle" font-size="21" font-weight="700" fill="#0f172a">Text or a tool call</text>
+  <text x="161" y="188" text-anchor="middle" font-size="13" fill="#334155">an email, a page, a tool result;</text>
+  <text x="161" y="207" text-anchor="middle" font-size="13" fill="#334155">or the call an agent proposes</text>
+  <text x="161" y="228" text-anchor="middle" font-size="12" font-style="italic" fill="#64748b">synthetic data only in this repo</text>
+  <path d="M290 170H322" stroke="#4d7c0f" stroke-width="2.5" fill="none" marker-end="url(#arr)"/>
+  <g filter="url(#sh)"><rect x="326" y="100" width="250" height="140" rx="14" fill="#ffffff" stroke="#8b5cf6" stroke-width="2"/></g>
+  <text x="451" y="132" text-anchor="middle" font-size="12" font-weight="700" fill="#8b5cf6" letter-spacing="1.5">2  THE FLOOR</text>
+  <text x="451" y="162" text-anchor="middle" font-size="21" font-weight="700" fill="#0f172a">Hard deny, no model</text>
+  <text x="451" y="188" text-anchor="middle" font-size="13" fill="#334155">normalise, decode, scan rules;</text>
+  <text x="451" y="207" text-anchor="middle" font-size="13" fill="#334155">wildcards, unknown tools, outsiders</text>
+  <text x="451" y="228" text-anchor="middle" font-size="12" font-style="italic" fill="#64748b">can only deny, never allow</text>
+  <path d="M580 170H612" stroke="#4d7c0f" stroke-width="2.5" fill="none" marker-end="url(#arr)"/>
+  <g filter="url(#sh)"><rect x="616" y="100" width="250" height="140" rx="14" fill="#ffffff" stroke="#14b8a6" stroke-width="2"/></g>
+  <text x="741" y="132" text-anchor="middle" font-size="12" font-weight="700" fill="#14b8a6" letter-spacing="1.5">3  THE PRIMARY</text>
+  <text x="741" y="162" text-anchor="middle" font-size="21" font-weight="700" fill="#0f172a">Jev: one typed call</text>
+  <text x="741" y="188" text-anchor="middle" font-size="13" fill="#334155">three questions at once, each</text>
+  <text x="741" y="207" text-anchor="middle" font-size="13" fill="#334155">with its own confidence</text>
+  <text x="741" y="228" text-anchor="middle" font-size="12" font-style="italic" fill="#64748b">built, offline-tested, not run live</text>
+  <path d="M870 170H902" stroke="#4d7c0f" stroke-width="2.5" fill="none" marker-end="url(#arr)"/>
+  <g filter="url(#sh)"><rect x="906" y="100" width="250" height="140" rx="14" fill="#ffffff" stroke="#f59e0b" stroke-width="2"/></g>
+  <text x="1031" y="132" text-anchor="middle" font-size="12" font-weight="700" fill="#f59e0b" letter-spacing="1.5">4  THE THRESHOLD</text>
+  <text x="1031" y="162" text-anchor="middle" font-size="21" font-weight="700" fill="#0f172a">Sure enough?</text>
+  <text x="1031" y="188" text-anchor="middle" font-size="13" fill="#334155">min confidence >= 0.8 decides;</text>
+  <text x="1031" y="207" text-anchor="middle" font-size="13" fill="#334155">below, missing or error: escalate</text>
+  <text x="1031" y="228" text-anchor="middle" font-size="12" font-style="italic" fill="#64748b">one threshold, set in one place</text>
+  <path d="M1031 244V288" stroke="#4d7c0f" stroke-width="2.5" fill="none" marker-end="url(#arr)"/>
+
+  <!-- ROW 2 (right to left) -->
+  <g filter="url(#sh)"><rect x="906" y="292" width="250" height="140" rx="14" fill="#ffffff" stroke="#d97706" stroke-width="2"/></g>
+  <text x="1031" y="324" text-anchor="middle" font-size="12" font-weight="700" fill="#d97706" letter-spacing="1.5">5  THE SECOND TIER</text>
+  <text x="1031" y="354" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">LLM second opinion</text>
+  <text x="1031" y="380" text-anchor="middle" font-size="13" fill="#334155">same questions, same policy text;</text>
+  <text x="1031" y="399" text-anchor="middle" font-size="13" fill="#334155">no confidence, so it is final</text>
+  <text x="1031" y="420" text-anchor="middle" font-size="12" font-style="italic" fill="#64748b">or a human, if no tier is left</text>
+  <path d="M902 362H870" stroke="#4d7c0f" stroke-width="2.5" fill="none" marker-end="url(#arr)"/>
+  <g filter="url(#sh)"><rect x="616" y="292" width="250" height="140" rx="14" fill="#ffffff" stroke="#65a30d" stroke-width="2.5"/></g>
+  <text x="741" y="320" text-anchor="middle" font-size="12" font-weight="700" fill="#4d7c0f" letter-spacing="1.5">6  THE TABLE</text>
+  <rect x="636" y="332" width="210" height="26" rx="13" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="741" y="350" text-anchor="middle" font-size="13" font-weight="700" fill="#166534">allow: in scope, nothing risky</text>
+  <rect x="636" y="364" width="210" height="26" rx="13" fill="#fef3c7" stroke="#d97706"/>
+  <text x="741" y="382" text-anchor="middle" font-size="13" font-weight="700" fill="#92400e">ask: a human decides</text>
+  <rect x="636" y="396" width="210" height="26" rx="13" fill="#fee2e2" stroke="#dc2626"/>
+  <text x="741" y="414" text-anchor="middle" font-size="13" font-weight="700" fill="#991b1b">deny: off task or addressed</text>
+  <path d="M612 362H580" stroke="#4d7c0f" stroke-width="2.5" fill="none" marker-end="url(#arr)"/>
+  <g filter="url(#sh)"><rect x="326" y="292" width="250" height="140" rx="14" fill="#ffffff" stroke="#0f766e" stroke-width="2.5"/></g>
+  <text x="451" y="324" text-anchor="middle" font-size="12" font-weight="700" fill="#0f766e" letter-spacing="1.5">7  THE FAIL POLICY</text>
+  <text x="451" y="354" text-anchor="middle" font-size="21" font-weight="700" fill="#0f172a">Fail closed</text>
+  <text x="451" y="380" text-anchor="middle" font-size="13" fill="#334155">all tiers failed or unsure: the</text>
+  <text x="451" y="399" text-anchor="middle" font-size="13" fill="#334155">rules verdict; allow becomes ask</text>
+  <text x="451" y="420" text-anchor="middle" font-size="12" font-style="italic" fill="#64748b">fail-open is an explicit opt-in</text>
+  <path d="M322 362H290" stroke="#4d7c0f" stroke-width="2.5" fill="none" marker-end="url(#arr)"/>
+  <g filter="url(#sh)"><rect x="36" y="292" width="250" height="140" rx="14" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/></g>
+  <text x="161" y="324" text-anchor="middle" font-size="12" font-weight="700" fill="#94a3b8" letter-spacing="1.5">8  THE RECORD</text>
+  <text x="161" y="354" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">Audit and traces</text>
+  <text x="161" y="380" text-anchor="middle" font-size="13" fill="#334155">hash-chained log of every decision;</text>
+  <text x="161" y="399" text-anchor="middle" font-size="13" fill="#334155">enums and numbers only, no text</text>
+  <text x="161" y="420" text-anchor="middle" font-size="12" font-style="italic" fill="#64748b">tamper-evident, not tamper-proof</text>
+
+  <!-- STATUS BANNER -->
+  <rect x="36" y="470" width="1120" height="130" rx="14" fill="#f7fee7" stroke="#bef264" stroke-width="1.5"/>
+  <text x="60" y="502" font-size="13" font-weight="700" fill="#4d7c0f" letter-spacing="1.5">STATUS: BUILT AND OFFLINE-TESTED, NOT RUN LIVE</text>
+  <text x="60" y="530" font-size="15" fill="#334155">No Jev or Claude call has been made by this project. Every number in the README comes from the deterministic rules baseline.</text>
+  <text x="60" y="552" font-size="15" fill="#334155">The gate assists deterministic verifiers and never replaces them: they check structure, Peephole checks meaning.</text>
+  <text x="60" y="574" font-size="15" fill="#334155">Data are synthetic and author-written; attack examples are generic and benign, for a sandbox with fake tools only.</text>
+  <text x="60" y="592" font-size="13" font-style="italic" fill="#64748b">Defensive scope only. Do not point any of this at a system you do not own.</text>
+</svg>
