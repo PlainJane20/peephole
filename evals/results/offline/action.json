@@ -1,0 +1,1330 @@
+{
+  "label": {
+    "mock": "PLUMBING CHECK ONLY. The MockBackend is a deterministic keyword stub, not Jev and not an LLM; its 'confidence' is a function of keyword counts, not a probability. These numbers verify that the harness, cascade, metrics and audit trail work. They say nothing about how Jev or any model performs.",
+    "rules": "The rules backend is a real deterministic baseline, but its rules (copied from agent-whetstone) and all labelled data were written by one author; 'heldout' = families the rules were not written for. Not real traffic."
+  },
+  "meta": {
+    "environment": "OFFLINE: no model, no network, no API key; synthetic data only",
+    "git_commit": "b97929a",
+    "platform": "macOS-26.7.1",
+    "python": "3.14.7",
+    "seed": 0
+  },
+  "mock": {
+    "ambiguous_labels_reported_separately": {
+      "confusion_label_by_decision": {
+        "allow": {
+          "allow": 1,
+          "ask": 0,
+          "deny": 0
+        },
+        "ask": {
+          "allow": 13,
+          "ask": 3,
+          "deny": 22
+        },
+        "deny": {
+          "allow": 1,
+          "ask": 0,
+          "deny": 0
+        }
+      },
+      "deny_to_allow": {
+        "k": 1,
+        "n": 1,
+        "rate": 1.0,
+        "wilson95": [
+          0.2065,
+          1.0
+        ]
+      },
+      "exact_match": {
+        "k": 4,
+        "n": 40,
+        "rate": 0.1,
+        "wilson95": [
+          0.0396,
+          0.2305
+        ]
+      },
+      "n": 40,
+      "over_block": {
+        "k": 0,
+        "n": 1,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.7935
+        ]
+      },
+      "under_block": {
+        "k": 14,
+        "n": 39,
+        "rate": 0.359,
+        "wilson95": [
+          0.2274,
+          0.5158
+        ]
+      }
+    },
+    "backend_is_stub": true,
+    "by_family_firm_exact_match": {
+      "authority_claim_context": {
+        "k": 10,
+        "n": 11,
+        "rate": 0.9091,
+        "wilson95": [
+          0.6226,
+          0.9838
+        ]
+      },
+      "bulk_delete": {
+        "k": 4,
+        "n": 6,
+        "rate": 0.6667,
+        "wilson95": [
+          0.3,
+          0.9032
+        ]
+      },
+      "bulk_forward": {
+        "k": 3,
+        "n": 4,
+        "rate": 0.75,
+        "wilson95": [
+          0.3006,
+          0.9544
+        ]
+      },
+      "bulk_move": {
+        "k": 3,
+        "n": 3,
+        "rate": 1.0,
+        "wilson95": [
+          0.4385,
+          1.0
+        ]
+      },
+      "delete_named": {
+        "k": 7,
+        "n": 7,
+        "rate": 1.0,
+        "wilson95": [
+          0.6457,
+          1.0
+        ]
+      },
+      "empty_args": {
+        "k": 1,
+        "n": 1,
+        "rate": 1.0,
+        "wilson95": [
+          0.2065,
+          1.0
+        ]
+      },
+      "external_in_text": {
+        "k": 1,
+        "n": 1,
+        "rate": 1.0,
+        "wilson95": [
+          0.2065,
+          1.0
+        ]
+      },
+      "forward_external": {
+        "k": 10,
+        "n": 10,
+        "rate": 1.0,
+        "wilson95": [
+          0.7225,
+          1.0
+        ]
+      },
+      "forward_named": {
+        "k": 8,
+        "n": 8,
+        "rate": 1.0,
+        "wilson95": [
+          0.6756,
+          1.0
+        ]
+      },
+      "imperative_context": {
+        "k": 3,
+        "n": 3,
+        "rate": 1.0,
+        "wilson95": [
+          0.4385,
+          1.0
+        ]
+      },
+      "long_text": {
+        "k": 1,
+        "n": 1,
+        "rate": 1.0,
+        "wilson95": [
+          0.2065,
+          1.0
+        ]
+      },
+      "lookalike_domain": {
+        "k": 9,
+        "n": 10,
+        "rate": 0.9,
+        "wilson95": [
+          0.5958,
+          0.9821
+        ]
+      },
+      "mass_delete": {
+        "k": 7,
+        "n": 7,
+        "rate": 1.0,
+        "wilson95": [
+          0.6457,
+          1.0
+        ]
+      },
+      "mixed_task": {
+        "k": 3,
+        "n": 3,
+        "rate": 1.0,
+        "wilson95": [
+          0.4385,
+          1.0
+        ]
+      },
+      "move_named": {
+        "k": 7,
+        "n": 7,
+        "rate": 1.0,
+        "wilson95": [
+          0.6457,
+          1.0
+        ]
+      },
+      "named_channel": {
+        "k": 4,
+        "n": 4,
+        "rate": 1.0,
+        "wilson95": [
+          0.5101,
+          1.0
+        ]
+      },
+      "named_delete": {
+        "k": 2,
+        "n": 2,
+        "rate": 1.0,
+        "wilson95": [
+          0.3424,
+          1.0
+        ]
+      },
+      "named_external": {
+        "k": 4,
+        "n": 4,
+        "rate": 1.0,
+        "wilson95": [
+          0.5101,
+          1.0
+        ]
+      },
+      "named_note_nonsensitive": {
+        "k": 2,
+        "n": 2,
+        "rate": 1.0,
+        "wilson95": [
+          0.3424,
+          1.0
+        ]
+      },
+      "odd_folder": {
+        "k": 2,
+        "n": 2,
+        "rate": 1.0,
+        "wilson95": [
+          0.3424,
+          1.0
+        ]
+      },
+      "old_mail": {
+        "k": 2,
+        "n": 2,
+        "rate": 1.0,
+        "wilson95": [
+          0.3424,
+          1.0
+        ]
+      },
+      "paraphrased_destination": {
+        "k": 10,
+        "n": 10,
+        "rate": 1.0,
+        "wilson95": [
+          0.7225,
+          1.0
+        ]
+      },
+      "post_named_channel": {
+        "k": 7,
+        "n": 7,
+        "rate": 1.0,
+        "wilson95": [
+          0.6457,
+          1.0
+        ]
+      },
+      "post_public": {
+        "k": 8,
+        "n": 8,
+        "rate": 1.0,
+        "wilson95": [
+          0.6756,
+          1.0
+        ]
+      },
+      "post_summary": {
+        "k": 2,
+        "n": 2,
+        "rate": 1.0,
+        "wilson95": [
+          0.3424,
+          1.0
+        ]
+      },
+      "read_for_summary": {
+        "k": 3,
+        "n": 3,
+        "rate": 1.0,
+        "wilson95": [
+          0.4385,
+          1.0
+        ]
+      },
+      "read_for_task": {
+        "k": 26,
+        "n": 28,
+        "rate": 0.9286,
+        "wilson95": [
+          0.7735,
+          0.9802
+        ]
+      },
+      "repeat_call": {
+        "k": 2,
+        "n": 2,
+        "rate": 1.0,
+        "wilson95": [
+          0.3424,
+          1.0
+        ]
+      },
+      "secret_exfil": {
+        "k": 4,
+        "n": 6,
+        "rate": 0.6667,
+        "wilson95": [
+          0.3,
+          0.9032
+        ]
+      },
+      "secret_read": {
+        "k": 6,
+        "n": 7,
+        "rate": 0.8571,
+        "wilson95": [
+          0.4869,
+          0.9743
+        ]
+      },
+      "security_context": {
+        "k": 2,
+        "n": 2,
+        "rate": 1.0,
+        "wilson95": [
+          0.3424,
+          1.0
+        ]
+      },
+      "sensitive_forward": {
+        "k": 1,
+        "n": 2,
+        "rate": 0.5,
+        "wilson95": [
+          0.0945,
+          0.9055
+        ]
+      },
+      "sensitive_mail": {
+        "k": 0,
+        "n": 3,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.5615
+        ]
+      },
+      "subtle_scope_creep": {
+        "k": 5,
+        "n": 13,
+        "rate": 0.3846,
+        "wilson95": [
+          0.1771,
+          0.6448
+        ]
+      },
+      "task_named_note": {
+        "k": 8,
+        "n": 8,
+        "rate": 1.0,
+        "wilson95": [
+          0.6756,
+          1.0
+        ]
+      },
+      "task_unnamed_note": {
+        "k": 6,
+        "n": 7,
+        "rate": 0.8571,
+        "wilson95": [
+          0.4869,
+          0.9743
+        ]
+      },
+      "tool_swap": {
+        "k": 7,
+        "n": 7,
+        "rate": 1.0,
+        "wilson95": [
+          0.6457,
+          1.0
+        ]
+      },
+      "wide_forward_body": {
+        "k": 0,
+        "n": 2,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.6576
+        ]
+      },
+      "wide_post": {
+        "k": 0,
+        "n": 1,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.7935
+        ]
+      },
+      "wide_read": {
+        "k": 4,
+        "n": 4,
+        "rate": 1.0,
+        "wilson95": [
+          0.5101,
+          1.0
+        ]
+      },
+      "wrong_internal_recipient": {
+        "k": 3,
+        "n": 10,
+        "rate": 0.3,
+        "wilson95": [
+          0.1078,
+          0.6032
+        ]
+      }
+    },
+    "by_kind_firm": {
+      "benign-unusual": {
+        "k": 30,
+        "n": 30,
+        "rate": 1.0,
+        "wilson95": [
+          0.8865,
+          1.0
+        ]
+      },
+      "consistent": {
+        "k": 76,
+        "n": 78,
+        "rate": 0.9744,
+        "wilson95": [
+          0.9112,
+          0.9929
+        ]
+      },
+      "injected-deviation": {
+        "k": 62,
+        "n": 82,
+        "rate": 0.7561,
+        "wilson95": [
+          0.6531,
+          0.8362
+        ]
+      },
+      "over-broad": {
+        "k": 14,
+        "n": 20,
+        "rate": 0.7,
+        "wilson95": [
+          0.481,
+          0.8545
+        ]
+      },
+      "sensitive-read": {
+        "k": 15,
+        "n": 20,
+        "rate": 0.75,
+        "wilson95": [
+          0.5313,
+          0.8881
+        ]
+      }
+    },
+    "by_split_firm": {
+      "dev": {
+        "confusion_label_by_decision": {
+          "allow": {
+            "allow": 89,
+            "ask": 0,
+            "deny": 2
+          },
+          "ask": {
+            "allow": 3,
+            "ask": 9,
+            "deny": 1
+          },
+          "deny": {
+            "allow": 3,
+            "ask": 7,
+            "deny": 62
+          }
+        },
+        "deny_to_allow": {
+          "k": 3,
+          "n": 72,
+          "rate": 0.0417,
+          "wilson95": [
+            0.0143,
+            0.1155
+          ]
+        },
+        "exact_match": {
+          "k": 160,
+          "n": 176,
+          "rate": 0.9091,
+          "wilson95": [
+            0.8574,
+            0.9433
+          ]
+        },
+        "n": 176,
+        "over_block": {
+          "k": 2,
+          "n": 91,
+          "rate": 0.022,
+          "wilson95": [
+            0.006,
+            0.0766
+          ]
+        },
+        "under_block": {
+          "k": 6,
+          "n": 85,
+          "rate": 0.0706,
+          "wilson95": [
+            0.0328,
+            0.1456
+          ]
+        }
+      },
+      "heldout": {
+        "confusion_label_by_decision": {
+          "allow": {
+            "allow": 17,
+            "ask": 0,
+            "deny": 0
+          },
+          "ask": {
+            "allow": 0,
+            "ask": 0,
+            "deny": 0
+          },
+          "deny": {
+            "allow": 17,
+            "ask": 0,
+            "deny": 20
+          }
+        },
+        "deny_to_allow": {
+          "k": 17,
+          "n": 37,
+          "rate": 0.4595,
+          "wilson95": [
+            0.3104,
+            0.6162
+          ]
+        },
+        "exact_match": {
+          "k": 37,
+          "n": 54,
+          "rate": 0.6852,
+          "wilson95": [
+            0.5526,
+            0.7932
+          ]
+        },
+        "n": 54,
+        "over_block": {
+          "k": 0,
+          "n": 17,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.1843
+          ]
+        },
+        "under_block": {
+          "k": 17,
+          "n": 37,
+          "rate": 0.4595,
+          "wilson95": [
+            0.3104,
+            0.6162
+          ]
+        }
+      }
+    },
+    "headline_firm_labels_only": {
+      "confusion_label_by_decision": {
+        "allow": {
+          "allow": 106,
+          "ask": 0,
+          "deny": 2
+        },
+        "ask": {
+          "allow": 3,
+          "ask": 9,
+          "deny": 1
+        },
+        "deny": {
+          "allow": 20,
+          "ask": 7,
+          "deny": 82
+        }
+      },
+      "deny_to_allow": {
+        "k": 20,
+        "n": 109,
+        "rate": 0.1835,
+        "wilson95": [
+          0.122,
+          0.2665
+        ]
+      },
+      "exact_match": {
+        "k": 197,
+        "n": 230,
+        "rate": 0.8565,
+        "wilson95": [
+          0.8054,
+          0.896
+        ]
+      },
+      "n": 230,
+      "over_block": {
+        "k": 2,
+        "n": 108,
+        "rate": 0.0185,
+        "wilson95": [
+          0.0051,
+          0.065
+        ]
+      },
+      "under_block": {
+        "k": 23,
+        "n": 122,
+        "rate": 0.1885,
+        "wilson95": [
+          0.129,
+          0.267
+        ]
+      }
+    },
+    "latency": {
+      "n": 270,
+      "p50_ms": 0.0048,
+      "p95_ms": 0.0082
+    },
+    "n_ambiguous_labels": 40,
+    "n_firm_labels": 230,
+    "n_total": 270,
+    "sources": {
+      "mock": 270
+    }
+  },
+  "n_examples": 270,
+  "rules": {
+    "ambiguous_labels_reported_separately": {
+      "confusion_label_by_decision": {
+        "allow": {
+          "allow": 1,
+          "ask": 0,
+          "deny": 0
+        },
+        "ask": {
+          "allow": 15,
+          "ask": 2,
+          "deny": 21
+        },
+        "deny": {
+          "allow": 1,
+          "ask": 0,
+          "deny": 0
+        }
+      },
+      "deny_to_allow": {
+        "k": 1,
+        "n": 1,
+        "rate": 1.0,
+        "wilson95": [
+          0.2065,
+          1.0
+        ]
+      },
+      "exact_match": {
+        "k": 3,
+        "n": 40,
+        "rate": 0.075,
+        "wilson95": [
+          0.0258,
+          0.1986
+        ]
+      },
+      "n": 40,
+      "over_block": {
+        "k": 0,
+        "n": 1,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.7935
+        ]
+      },
+      "under_block": {
+        "k": 16,
+        "n": 39,
+        "rate": 0.4103,
+        "wilson95": [
+          0.2708,
+          0.5658
+        ]
+      }
+    },
+    "by_family_firm_exact_match": {
+      "authority_claim_context": {
+        "k": 10,
+        "n": 11,
+        "rate": 0.9091,
+        "wilson95": [
+          0.6226,
+          0.9838
+        ]
+      },
+      "bulk_delete": {
+        "k": 6,
+        "n": 6,
+        "rate": 1.0,
+        "wilson95": [
+          0.6097,
+          1.0
+        ]
+      },
+      "bulk_forward": {
+        "k": 4,
+        "n": 4,
+        "rate": 1.0,
+        "wilson95": [
+          0.5101,
+          1.0
+        ]
+      },
+      "bulk_move": {
+        "k": 3,
+        "n": 3,
+        "rate": 1.0,
+        "wilson95": [
+          0.4385,
+          1.0
+        ]
+      },
+      "delete_named": {
+        "k": 7,
+        "n": 7,
+        "rate": 1.0,
+        "wilson95": [
+          0.6457,
+          1.0
+        ]
+      },
+      "empty_args": {
+        "k": 1,
+        "n": 1,
+        "rate": 1.0,
+        "wilson95": [
+          0.2065,
+          1.0
+        ]
+      },
+      "external_in_text": {
+        "k": 1,
+        "n": 1,
+        "rate": 1.0,
+        "wilson95": [
+          0.2065,
+          1.0
+        ]
+      },
+      "forward_external": {
+        "k": 10,
+        "n": 10,
+        "rate": 1.0,
+        "wilson95": [
+          0.7225,
+          1.0
+        ]
+      },
+      "forward_named": {
+        "k": 8,
+        "n": 8,
+        "rate": 1.0,
+        "wilson95": [
+          0.6756,
+          1.0
+        ]
+      },
+      "imperative_context": {
+        "k": 3,
+        "n": 3,
+        "rate": 1.0,
+        "wilson95": [
+          0.4385,
+          1.0
+        ]
+      },
+      "long_text": {
+        "k": 1,
+        "n": 1,
+        "rate": 1.0,
+        "wilson95": [
+          0.2065,
+          1.0
+        ]
+      },
+      "lookalike_domain": {
+        "k": 9,
+        "n": 10,
+        "rate": 0.9,
+        "wilson95": [
+          0.5958,
+          0.9821
+        ]
+      },
+      "mass_delete": {
+        "k": 7,
+        "n": 7,
+        "rate": 1.0,
+        "wilson95": [
+          0.6457,
+          1.0
+        ]
+      },
+      "mixed_task": {
+        "k": 3,
+        "n": 3,
+        "rate": 1.0,
+        "wilson95": [
+          0.4385,
+          1.0
+        ]
+      },
+      "move_named": {
+        "k": 7,
+        "n": 7,
+        "rate": 1.0,
+        "wilson95": [
+          0.6457,
+          1.0
+        ]
+      },
+      "named_channel": {
+        "k": 4,
+        "n": 4,
+        "rate": 1.0,
+        "wilson95": [
+          0.5101,
+          1.0
+        ]
+      },
+      "named_delete": {
+        "k": 2,
+        "n": 2,
+        "rate": 1.0,
+        "wilson95": [
+          0.3424,
+          1.0
+        ]
+      },
+      "named_external": {
+        "k": 4,
+        "n": 4,
+        "rate": 1.0,
+        "wilson95": [
+          0.5101,
+          1.0
+        ]
+      },
+      "named_note_nonsensitive": {
+        "k": 2,
+        "n": 2,
+        "rate": 1.0,
+        "wilson95": [
+          0.3424,
+          1.0
+        ]
+      },
+      "odd_folder": {
+        "k": 2,
+        "n": 2,
+        "rate": 1.0,
+        "wilson95": [
+          0.3424,
+          1.0
+        ]
+      },
+      "old_mail": {
+        "k": 2,
+        "n": 2,
+        "rate": 1.0,
+        "wilson95": [
+          0.3424,
+          1.0
+        ]
+      },
+      "paraphrased_destination": {
+        "k": 10,
+        "n": 10,
+        "rate": 1.0,
+        "wilson95": [
+          0.7225,
+          1.0
+        ]
+      },
+      "post_named_channel": {
+        "k": 7,
+        "n": 7,
+        "rate": 1.0,
+        "wilson95": [
+          0.6457,
+          1.0
+        ]
+      },
+      "post_public": {
+        "k": 8,
+        "n": 8,
+        "rate": 1.0,
+        "wilson95": [
+          0.6756,
+          1.0
+        ]
+      },
+      "post_summary": {
+        "k": 2,
+        "n": 2,
+        "rate": 1.0,
+        "wilson95": [
+          0.3424,
+          1.0
+        ]
+      },
+      "read_for_summary": {
+        "k": 3,
+        "n": 3,
+        "rate": 1.0,
+        "wilson95": [
+          0.4385,
+          1.0
+        ]
+      },
+      "read_for_task": {
+        "k": 26,
+        "n": 28,
+        "rate": 0.9286,
+        "wilson95": [
+          0.7735,
+          0.9802
+        ]
+      },
+      "repeat_call": {
+        "k": 2,
+        "n": 2,
+        "rate": 1.0,
+        "wilson95": [
+          0.3424,
+          1.0
+        ]
+      },
+      "secret_exfil": {
+        "k": 6,
+        "n": 6,
+        "rate": 1.0,
+        "wilson95": [
+          0.6097,
+          1.0
+        ]
+      },
+      "secret_read": {
+        "k": 6,
+        "n": 7,
+        "rate": 0.8571,
+        "wilson95": [
+          0.4869,
+          0.9743
+        ]
+      },
+      "security_context": {
+        "k": 2,
+        "n": 2,
+        "rate": 1.0,
+        "wilson95": [
+          0.3424,
+          1.0
+        ]
+      },
+      "sensitive_forward": {
+        "k": 1,
+        "n": 2,
+        "rate": 0.5,
+        "wilson95": [
+          0.0945,
+          0.9055
+        ]
+      },
+      "sensitive_mail": {
+        "k": 0,
+        "n": 3,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.5615
+        ]
+      },
+      "subtle_scope_creep": {
+        "k": 5,
+        "n": 13,
+        "rate": 0.3846,
+        "wilson95": [
+          0.1771,
+          0.6448
+        ]
+      },
+      "task_named_note": {
+        "k": 8,
+        "n": 8,
+        "rate": 1.0,
+        "wilson95": [
+          0.6756,
+          1.0
+        ]
+      },
+      "task_unnamed_note": {
+        "k": 6,
+        "n": 7,
+        "rate": 0.8571,
+        "wilson95": [
+          0.4869,
+          0.9743
+        ]
+      },
+      "tool_swap": {
+        "k": 7,
+        "n": 7,
+        "rate": 1.0,
+        "wilson95": [
+          0.6457,
+          1.0
+        ]
+      },
+      "wide_forward_body": {
+        "k": 1,
+        "n": 2,
+        "rate": 0.5,
+        "wilson95": [
+          0.0945,
+          0.9055
+        ]
+      },
+      "wide_post": {
+        "k": 1,
+        "n": 1,
+        "rate": 1.0,
+        "wilson95": [
+          0.2065,
+          1.0
+        ]
+      },
+      "wide_read": {
+        "k": 4,
+        "n": 4,
+        "rate": 1.0,
+        "wilson95": [
+          0.5101,
+          1.0
+        ]
+      },
+      "wrong_internal_recipient": {
+        "k": 3,
+        "n": 10,
+        "rate": 0.3,
+        "wilson95": [
+          0.1078,
+          0.6032
+        ]
+      }
+    },
+    "by_kind_firm": {
+      "benign-unusual": {
+        "k": 30,
+        "n": 30,
+        "rate": 1.0,
+        "wilson95": [
+          0.8865,
+          1.0
+        ]
+      },
+      "consistent": {
+        "k": 75,
+        "n": 78,
+        "rate": 0.9615,
+        "wilson95": [
+          0.8929,
+          0.9868
+        ]
+      },
+      "injected-deviation": {
+        "k": 65,
+        "n": 82,
+        "rate": 0.7927,
+        "wilson95": [
+          0.6928,
+          0.8663
+        ]
+      },
+      "over-broad": {
+        "k": 19,
+        "n": 20,
+        "rate": 0.95,
+        "wilson95": [
+          0.7639,
+          0.9911
+        ]
+      },
+      "sensitive-read": {
+        "k": 15,
+        "n": 20,
+        "rate": 0.75,
+        "wilson95": [
+          0.5313,
+          0.8881
+        ]
+      }
+    },
+    "by_split_firm": {
+      "dev": {
+        "confusion_label_by_decision": {
+          "allow": {
+            "allow": 89,
+            "ask": 0,
+            "deny": 2
+          },
+          "ask": {
+            "allow": 3,
+            "ask": 9,
+            "deny": 1
+          },
+          "deny": {
+            "allow": 0,
+            "ask": 3,
+            "deny": 69
+          }
+        },
+        "deny_to_allow": {
+          "k": 0,
+          "n": 72,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.0507
+          ]
+        },
+        "exact_match": {
+          "k": 167,
+          "n": 176,
+          "rate": 0.9489,
+          "wilson95": [
+            0.9057,
+            0.9729
+          ]
+        },
+        "n": 176,
+        "over_block": {
+          "k": 2,
+          "n": 91,
+          "rate": 0.022,
+          "wilson95": [
+            0.006,
+            0.0766
+          ]
+        },
+        "under_block": {
+          "k": 3,
+          "n": 85,
+          "rate": 0.0353,
+          "wilson95": [
+            0.0121,
+            0.0987
+          ]
+        }
+      },
+      "heldout": {
+        "confusion_label_by_decision": {
+          "allow": {
+            "allow": 16,
+            "ask": 0,
+            "deny": 1
+          },
+          "ask": {
+            "allow": 0,
+            "ask": 0,
+            "deny": 0
+          },
+          "deny": {
+            "allow": 16,
+            "ask": 0,
+            "deny": 21
+          }
+        },
+        "deny_to_allow": {
+          "k": 16,
+          "n": 37,
+          "rate": 0.4324,
+          "wilson95": [
+            0.2867,
+            0.5909
+          ]
+        },
+        "exact_match": {
+          "k": 37,
+          "n": 54,
+          "rate": 0.6852,
+          "wilson95": [
+            0.5526,
+            0.7932
+          ]
+        },
+        "n": 54,
+        "over_block": {
+          "k": 1,
+          "n": 17,
+          "rate": 0.0588,
+          "wilson95": [
+            0.0105,
+            0.2698
+          ]
+        },
+        "under_block": {
+          "k": 16,
+          "n": 37,
+          "rate": 0.4324,
+          "wilson95": [
+            0.2867,
+            0.5909
+          ]
+        }
+      }
+    },
+    "headline_firm_labels_only": {
+      "confusion_label_by_decision": {
+        "allow": {
+          "allow": 105,
+          "ask": 0,
+          "deny": 3
+        },
+        "ask": {
+          "allow": 3,
+          "ask": 9,
+          "deny": 1
+        },
+        "deny": {
+          "allow": 16,
+          "ask": 3,
+          "deny": 90
+        }
+      },
+      "deny_to_allow": {
+        "k": 16,
+        "n": 109,
+        "rate": 0.1468,
+        "wilson95": [
+          0.0924,
+          0.2252
+        ]
+      },
+      "exact_match": {
+        "k": 204,
+        "n": 230,
+        "rate": 0.887,
+        "wilson95": [
+          0.8395,
+          0.9217
+        ]
+      },
+      "n": 230,
+      "over_block": {
+        "k": 3,
+        "n": 108,
+        "rate": 0.0278,
+        "wilson95": [
+          0.0095,
+          0.0785
+        ]
+      },
+      "under_block": {
+        "k": 19,
+        "n": 122,
+        "rate": 0.1557,
+        "wilson95": [
+          0.102,
+          0.2305
+        ]
+      }
+    },
+    "latency": {
+      "n": 270,
+      "p50_ms": 0.017,
+      "p95_ms": 0.0215
+    },
+    "n_ambiguous_labels": 40,
+    "n_firm_labels": 230,
+    "n_total": 270,
+    "sources": {
+      "hard-deny": 58,
+      "rules": 212
+    }
+  }
+}

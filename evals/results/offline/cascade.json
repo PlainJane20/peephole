@@ -1,0 +1,897 @@
+{
+  "backend_is_stub": true,
+  "label": "PLUMBING CHECK ONLY. The MockBackend is a deterministic keyword stub, not Jev and not an LLM; its 'confidence' is a function of keyword counts, not a probability. These numbers verify that the harness, cascade, metrics and audit trail work. They say nothing about how Jev or any model performs.",
+  "meta": {
+    "environment": "OFFLINE: no model, no network, no API key; synthetic data only",
+    "git_commit": "b97929a",
+    "platform": "macOS-26.7.1",
+    "python": "3.14.7",
+    "seed": 0
+  },
+  "results": {
+    "mock_only_fallback_rules": {
+      "0.50": {
+        "action_deny_to_allow": {
+          "k": 16,
+          "n": 109,
+          "rate": 0.1468,
+          "wilson95": [
+            0.0924,
+            0.2252
+          ]
+        },
+        "action_exact_match": {
+          "k": 204,
+          "n": 230,
+          "rate": 0.887,
+          "wilson95": [
+            0.8395,
+            0.9217
+          ]
+        },
+        "action_over_block": {
+          "k": 3,
+          "n": 108,
+          "rate": 0.0278,
+          "wilson95": [
+            0.0095,
+            0.0785
+          ]
+        },
+        "escalation_rate_action": 0.0,
+        "escalation_rate_input": 0.0,
+        "input_detection": {
+          "k": 53,
+          "n": 125,
+          "rate": 0.424,
+          "wilson95": [
+            0.3409,
+            0.5116
+          ]
+        },
+        "input_false_block": {
+          "k": 31,
+          "n": 140,
+          "rate": 0.2214,
+          "wilson95": [
+            0.1606,
+            0.2971
+          ]
+        },
+        "input_heldout_detection": {
+          "k": 21,
+          "n": 70,
+          "rate": 0.3,
+          "wilson95": [
+            0.2054,
+            0.4154
+          ]
+        },
+        "sources_action": {
+          "hard-deny": 58,
+          "mock-jev-like": 212
+        },
+        "sources_input": {
+          "hard-deny": 5,
+          "mock-jev-like": 260
+        }
+      },
+      "0.60": {
+        "action_deny_to_allow": {
+          "k": 16,
+          "n": 109,
+          "rate": 0.1468,
+          "wilson95": [
+            0.0924,
+            0.2252
+          ]
+        },
+        "action_exact_match": {
+          "k": 204,
+          "n": 230,
+          "rate": 0.887,
+          "wilson95": [
+            0.8395,
+            0.9217
+          ]
+        },
+        "action_over_block": {
+          "k": 3,
+          "n": 108,
+          "rate": 0.0278,
+          "wilson95": [
+            0.0095,
+            0.0785
+          ]
+        },
+        "escalation_rate_action": 0.0,
+        "escalation_rate_input": 0.2264,
+        "input_detection": {
+          "k": 53,
+          "n": 125,
+          "rate": 0.424,
+          "wilson95": [
+            0.3409,
+            0.5116
+          ]
+        },
+        "input_false_block": {
+          "k": 31,
+          "n": 140,
+          "rate": 0.2214,
+          "wilson95": [
+            0.1606,
+            0.2971
+          ]
+        },
+        "input_heldout_detection": {
+          "k": 21,
+          "n": 70,
+          "rate": 0.3,
+          "wilson95": [
+            0.2054,
+            0.4154
+          ]
+        },
+        "sources_action": {
+          "hard-deny": 58,
+          "mock-jev-like": 212
+        },
+        "sources_input": {
+          "fail-closed": 60,
+          "hard-deny": 5,
+          "mock-jev-like": 200
+        }
+      },
+      "0.70": {
+        "action_deny_to_allow": {
+          "k": 16,
+          "n": 109,
+          "rate": 0.1468,
+          "wilson95": [
+            0.0924,
+            0.2252
+          ]
+        },
+        "action_exact_match": {
+          "k": 203,
+          "n": 230,
+          "rate": 0.8826,
+          "wilson95": [
+            0.8346,
+            0.9181
+          ]
+        },
+        "action_over_block": {
+          "k": 4,
+          "n": 108,
+          "rate": 0.037,
+          "wilson95": [
+            0.0145,
+            0.0914
+          ]
+        },
+        "escalation_rate_action": 0.2185,
+        "escalation_rate_input": 0.2264,
+        "input_detection": {
+          "k": 53,
+          "n": 125,
+          "rate": 0.424,
+          "wilson95": [
+            0.3409,
+            0.5116
+          ]
+        },
+        "input_false_block": {
+          "k": 31,
+          "n": 140,
+          "rate": 0.2214,
+          "wilson95": [
+            0.1606,
+            0.2971
+          ]
+        },
+        "input_heldout_detection": {
+          "k": 21,
+          "n": 70,
+          "rate": 0.3,
+          "wilson95": [
+            0.2054,
+            0.4154
+          ]
+        },
+        "sources_action": {
+          "fail-closed": 59,
+          "hard-deny": 58,
+          "mock-jev-like": 153
+        },
+        "sources_input": {
+          "fail-closed": 60,
+          "hard-deny": 5,
+          "mock-jev-like": 200
+        }
+      },
+      "0.80": {
+        "action_deny_to_allow": {
+          "k": 16,
+          "n": 109,
+          "rate": 0.1468,
+          "wilson95": [
+            0.0924,
+            0.2252
+          ]
+        },
+        "action_exact_match": {
+          "k": 203,
+          "n": 230,
+          "rate": 0.8826,
+          "wilson95": [
+            0.8346,
+            0.9181
+          ]
+        },
+        "action_over_block": {
+          "k": 4,
+          "n": 108,
+          "rate": 0.037,
+          "wilson95": [
+            0.0145,
+            0.0914
+          ]
+        },
+        "escalation_rate_action": 0.2185,
+        "escalation_rate_input": 0.5132,
+        "input_detection": {
+          "k": 96,
+          "n": 125,
+          "rate": 0.768,
+          "wilson95": [
+            0.6867,
+            0.8333
+          ]
+        },
+        "input_false_block": {
+          "k": 64,
+          "n": 140,
+          "rate": 0.4571,
+          "wilson95": [
+            0.3769,
+            0.5397
+          ]
+        },
+        "input_heldout_detection": {
+          "k": 52,
+          "n": 70,
+          "rate": 0.7429,
+          "wilson95": [
+            0.6297,
+            0.8307
+          ]
+        },
+        "sources_action": {
+          "fail-closed": 59,
+          "hard-deny": 58,
+          "mock-jev-like": 153
+        },
+        "sources_input": {
+          "fail-closed": 136,
+          "hard-deny": 5,
+          "mock-jev-like": 124
+        }
+      },
+      "0.90": {
+        "action_deny_to_allow": {
+          "k": 16,
+          "n": 109,
+          "rate": 0.1468,
+          "wilson95": [
+            0.0924,
+            0.2252
+          ]
+        },
+        "action_exact_match": {
+          "k": 203,
+          "n": 230,
+          "rate": 0.8826,
+          "wilson95": [
+            0.8346,
+            0.9181
+          ]
+        },
+        "action_over_block": {
+          "k": 4,
+          "n": 108,
+          "rate": 0.037,
+          "wilson95": [
+            0.0145,
+            0.0914
+          ]
+        },
+        "escalation_rate_action": 0.2185,
+        "escalation_rate_input": 0.9811,
+        "input_detection": {
+          "k": 125,
+          "n": 125,
+          "rate": 1.0,
+          "wilson95": [
+            0.9702,
+            1.0
+          ]
+        },
+        "input_false_block": {
+          "k": 140,
+          "n": 140,
+          "rate": 1.0,
+          "wilson95": [
+            0.9733,
+            1.0
+          ]
+        },
+        "input_heldout_detection": {
+          "k": 70,
+          "n": 70,
+          "rate": 1.0,
+          "wilson95": [
+            0.948,
+            1.0
+          ]
+        },
+        "sources_action": {
+          "fail-closed": 59,
+          "hard-deny": 58,
+          "mock-jev-like": 153
+        },
+        "sources_input": {
+          "fail-closed": 260,
+          "hard-deny": 5
+        }
+      },
+      "0.95": {
+        "action_deny_to_allow": {
+          "k": 0,
+          "n": 109,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.034
+          ]
+        },
+        "action_exact_match": {
+          "k": 102,
+          "n": 230,
+          "rate": 0.4435,
+          "wilson95": [
+            0.3807,
+            0.5081
+          ]
+        },
+        "action_over_block": {
+          "k": 108,
+          "n": 108,
+          "rate": 1.0,
+          "wilson95": [
+            0.9657,
+            1.0
+          ]
+        },
+        "escalation_rate_action": 0.7852,
+        "escalation_rate_input": 0.9811,
+        "input_detection": {
+          "k": 125,
+          "n": 125,
+          "rate": 1.0,
+          "wilson95": [
+            0.9702,
+            1.0
+          ]
+        },
+        "input_false_block": {
+          "k": 140,
+          "n": 140,
+          "rate": 1.0,
+          "wilson95": [
+            0.9733,
+            1.0
+          ]
+        },
+        "input_heldout_detection": {
+          "k": 70,
+          "n": 70,
+          "rate": 1.0,
+          "wilson95": [
+            0.948,
+            1.0
+          ]
+        },
+        "sources_action": {
+          "fail-closed": 212,
+          "hard-deny": 58
+        },
+        "sources_input": {
+          "fail-closed": 260,
+          "hard-deny": 5
+        }
+      }
+    },
+    "mock_then_mock_llm": {
+      "0.50": {
+        "action_deny_to_allow": {
+          "k": 16,
+          "n": 109,
+          "rate": 0.1468,
+          "wilson95": [
+            0.0924,
+            0.2252
+          ]
+        },
+        "action_exact_match": {
+          "k": 204,
+          "n": 230,
+          "rate": 0.887,
+          "wilson95": [
+            0.8395,
+            0.9217
+          ]
+        },
+        "action_over_block": {
+          "k": 3,
+          "n": 108,
+          "rate": 0.0278,
+          "wilson95": [
+            0.0095,
+            0.0785
+          ]
+        },
+        "escalation_rate_action": 0.0,
+        "escalation_rate_input": 0.0,
+        "input_detection": {
+          "k": 53,
+          "n": 125,
+          "rate": 0.424,
+          "wilson95": [
+            0.3409,
+            0.5116
+          ]
+        },
+        "input_false_block": {
+          "k": 31,
+          "n": 140,
+          "rate": 0.2214,
+          "wilson95": [
+            0.1606,
+            0.2971
+          ]
+        },
+        "input_heldout_detection": {
+          "k": 21,
+          "n": 70,
+          "rate": 0.3,
+          "wilson95": [
+            0.2054,
+            0.4154
+          ]
+        },
+        "sources_action": {
+          "hard-deny": 58,
+          "mock-jev-like": 212
+        },
+        "sources_input": {
+          "hard-deny": 5,
+          "mock-jev-like": 260
+        }
+      },
+      "0.60": {
+        "action_deny_to_allow": {
+          "k": 16,
+          "n": 109,
+          "rate": 0.1468,
+          "wilson95": [
+            0.0924,
+            0.2252
+          ]
+        },
+        "action_exact_match": {
+          "k": 204,
+          "n": 230,
+          "rate": 0.887,
+          "wilson95": [
+            0.8395,
+            0.9217
+          ]
+        },
+        "action_over_block": {
+          "k": 3,
+          "n": 108,
+          "rate": 0.0278,
+          "wilson95": [
+            0.0095,
+            0.0785
+          ]
+        },
+        "escalation_rate_action": 0.0,
+        "escalation_rate_input": 0.2264,
+        "input_detection": {
+          "k": 53,
+          "n": 125,
+          "rate": 0.424,
+          "wilson95": [
+            0.3409,
+            0.5116
+          ]
+        },
+        "input_false_block": {
+          "k": 31,
+          "n": 140,
+          "rate": 0.2214,
+          "wilson95": [
+            0.1606,
+            0.2971
+          ]
+        },
+        "input_heldout_detection": {
+          "k": 21,
+          "n": 70,
+          "rate": 0.3,
+          "wilson95": [
+            0.2054,
+            0.4154
+          ]
+        },
+        "sources_action": {
+          "hard-deny": 58,
+          "mock-jev-like": 212
+        },
+        "sources_input": {
+          "hard-deny": 5,
+          "mock-jev-like": 200,
+          "mock-llm-like": 60
+        }
+      },
+      "0.70": {
+        "action_deny_to_allow": {
+          "k": 16,
+          "n": 109,
+          "rate": 0.1468,
+          "wilson95": [
+            0.0924,
+            0.2252
+          ]
+        },
+        "action_exact_match": {
+          "k": 204,
+          "n": 230,
+          "rate": 0.887,
+          "wilson95": [
+            0.8395,
+            0.9217
+          ]
+        },
+        "action_over_block": {
+          "k": 3,
+          "n": 108,
+          "rate": 0.0278,
+          "wilson95": [
+            0.0095,
+            0.0785
+          ]
+        },
+        "escalation_rate_action": 0.2185,
+        "escalation_rate_input": 0.2264,
+        "input_detection": {
+          "k": 53,
+          "n": 125,
+          "rate": 0.424,
+          "wilson95": [
+            0.3409,
+            0.5116
+          ]
+        },
+        "input_false_block": {
+          "k": 31,
+          "n": 140,
+          "rate": 0.2214,
+          "wilson95": [
+            0.1606,
+            0.2971
+          ]
+        },
+        "input_heldout_detection": {
+          "k": 21,
+          "n": 70,
+          "rate": 0.3,
+          "wilson95": [
+            0.2054,
+            0.4154
+          ]
+        },
+        "sources_action": {
+          "hard-deny": 58,
+          "mock-jev-like": 153,
+          "mock-llm-like": 59
+        },
+        "sources_input": {
+          "hard-deny": 5,
+          "mock-jev-like": 200,
+          "mock-llm-like": 60
+        }
+      },
+      "0.80": {
+        "action_deny_to_allow": {
+          "k": 16,
+          "n": 109,
+          "rate": 0.1468,
+          "wilson95": [
+            0.0924,
+            0.2252
+          ]
+        },
+        "action_exact_match": {
+          "k": 204,
+          "n": 230,
+          "rate": 0.887,
+          "wilson95": [
+            0.8395,
+            0.9217
+          ]
+        },
+        "action_over_block": {
+          "k": 3,
+          "n": 108,
+          "rate": 0.0278,
+          "wilson95": [
+            0.0095,
+            0.0785
+          ]
+        },
+        "escalation_rate_action": 0.2185,
+        "escalation_rate_input": 0.5132,
+        "input_detection": {
+          "k": 56,
+          "n": 125,
+          "rate": 0.448,
+          "wilson95": [
+            0.3637,
+            0.5354
+          ]
+        },
+        "input_false_block": {
+          "k": 31,
+          "n": 140,
+          "rate": 0.2214,
+          "wilson95": [
+            0.1606,
+            0.2971
+          ]
+        },
+        "input_heldout_detection": {
+          "k": 24,
+          "n": 70,
+          "rate": 0.3429,
+          "wilson95": [
+            0.2425,
+            0.4596
+          ]
+        },
+        "sources_action": {
+          "hard-deny": 58,
+          "mock-jev-like": 153,
+          "mock-llm-like": 59
+        },
+        "sources_input": {
+          "hard-deny": 5,
+          "mock-jev-like": 124,
+          "mock-llm-like": 136
+        }
+      },
+      "0.90": {
+        "action_deny_to_allow": {
+          "k": 16,
+          "n": 109,
+          "rate": 0.1468,
+          "wilson95": [
+            0.0924,
+            0.2252
+          ]
+        },
+        "action_exact_match": {
+          "k": 204,
+          "n": 230,
+          "rate": 0.887,
+          "wilson95": [
+            0.8395,
+            0.9217
+          ]
+        },
+        "action_over_block": {
+          "k": 3,
+          "n": 108,
+          "rate": 0.0278,
+          "wilson95": [
+            0.0095,
+            0.0785
+          ]
+        },
+        "escalation_rate_action": 0.2185,
+        "escalation_rate_input": 0.9811,
+        "input_detection": {
+          "k": 56,
+          "n": 125,
+          "rate": 0.448,
+          "wilson95": [
+            0.3637,
+            0.5354
+          ]
+        },
+        "input_false_block": {
+          "k": 31,
+          "n": 140,
+          "rate": 0.2214,
+          "wilson95": [
+            0.1606,
+            0.2971
+          ]
+        },
+        "input_heldout_detection": {
+          "k": 24,
+          "n": 70,
+          "rate": 0.3429,
+          "wilson95": [
+            0.2425,
+            0.4596
+          ]
+        },
+        "sources_action": {
+          "hard-deny": 58,
+          "mock-jev-like": 153,
+          "mock-llm-like": 59
+        },
+        "sources_input": {
+          "hard-deny": 5,
+          "mock-llm-like": 260
+        }
+      },
+      "0.95": {
+        "action_deny_to_allow": {
+          "k": 16,
+          "n": 109,
+          "rate": 0.1468,
+          "wilson95": [
+            0.0924,
+            0.2252
+          ]
+        },
+        "action_exact_match": {
+          "k": 204,
+          "n": 230,
+          "rate": 0.887,
+          "wilson95": [
+            0.8395,
+            0.9217
+          ]
+        },
+        "action_over_block": {
+          "k": 3,
+          "n": 108,
+          "rate": 0.0278,
+          "wilson95": [
+            0.0095,
+            0.0785
+          ]
+        },
+        "escalation_rate_action": 0.7852,
+        "escalation_rate_input": 0.9811,
+        "input_detection": {
+          "k": 56,
+          "n": 125,
+          "rate": 0.448,
+          "wilson95": [
+            0.3637,
+            0.5354
+          ]
+        },
+        "input_false_block": {
+          "k": 31,
+          "n": 140,
+          "rate": 0.2214,
+          "wilson95": [
+            0.1606,
+            0.2971
+          ]
+        },
+        "input_heldout_detection": {
+          "k": 24,
+          "n": 70,
+          "rate": 0.3429,
+          "wilson95": [
+            0.2425,
+            0.4596
+          ]
+        },
+        "sources_action": {
+          "hard-deny": 58,
+          "mock-llm-like": 212
+        },
+        "sources_input": {
+          "hard-deny": 5,
+          "mock-llm-like": 260
+        }
+      }
+    },
+    "rules_only": {
+      "n/a": {
+        "action_deny_to_allow": {
+          "k": 16,
+          "n": 109,
+          "rate": 0.1468,
+          "wilson95": [
+            0.0924,
+            0.2252
+          ]
+        },
+        "action_exact_match": {
+          "k": 204,
+          "n": 230,
+          "rate": 0.887,
+          "wilson95": [
+            0.8395,
+            0.9217
+          ]
+        },
+        "action_over_block": {
+          "k": 3,
+          "n": 108,
+          "rate": 0.0278,
+          "wilson95": [
+            0.0095,
+            0.0785
+          ]
+        },
+        "escalation_rate_action": 0.0,
+        "escalation_rate_input": 0.0,
+        "input_detection": {
+          "k": 98,
+          "n": 125,
+          "rate": 0.784,
+          "wilson95": [
+            0.704,
+            0.8471
+          ]
+        },
+        "input_false_block": {
+          "k": 18,
+          "n": 140,
+          "rate": 0.1286,
+          "wilson95": [
+            0.0829,
+            0.1941
+          ]
+        },
+        "input_heldout_detection": {
+          "k": 48,
+          "n": 70,
+          "rate": 0.6857,
+          "wilson95": [
+            0.5697,
+            0.7824
+          ]
+        },
+        "sources_action": {
+          "hard-deny": 58,
+          "rules": 212
+        },
+        "sources_input": {
+          "hard-deny": 5,
+          "rules": 260
+        }
+      }
+    }
+  },
+  "thresholds": [
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    0.95
+  ]
+}

@@ -1,0 +1,295 @@
+{
+  "action": {
+    "accuracy_of_items_with_confidence": 0.7444,
+    "aurc": 0.172983,
+    "available": true,
+    "ece": 0.135977,
+    "n": 270,
+    "n_with_confidence": 270,
+    "reliability": [
+      {
+        "accuracy": null,
+        "bin_hi": 0.1,
+        "bin_lo": 0.0,
+        "gap": null,
+        "mean_confidence": null,
+        "n": 0
+      },
+      {
+        "accuracy": null,
+        "bin_hi": 0.2,
+        "bin_lo": 0.1,
+        "gap": null,
+        "mean_confidence": null,
+        "n": 0
+      },
+      {
+        "accuracy": null,
+        "bin_hi": 0.3,
+        "bin_lo": 0.2,
+        "gap": null,
+        "mean_confidence": null,
+        "n": 0
+      },
+      {
+        "accuracy": null,
+        "bin_hi": 0.4,
+        "bin_lo": 0.3,
+        "gap": null,
+        "mean_confidence": null,
+        "n": 0
+      },
+      {
+        "accuracy": null,
+        "bin_hi": 0.5,
+        "bin_lo": 0.4,
+        "gap": null,
+        "mean_confidence": null,
+        "n": 0
+      },
+      {
+        "accuracy": null,
+        "bin_hi": 0.6,
+        "bin_lo": 0.5,
+        "gap": null,
+        "mean_confidence": null,
+        "n": 0
+      },
+      {
+        "accuracy": 0.7363,
+        "bin_hi": 0.7,
+        "bin_lo": 0.6,
+        "gap": 0.0663,
+        "mean_confidence": 0.67,
+        "n": 91
+      },
+      {
+        "accuracy": null,
+        "bin_hi": 0.8,
+        "bin_lo": 0.7,
+        "gap": null,
+        "mean_confidence": null,
+        "n": 0
+      },
+      {
+        "accuracy": null,
+        "bin_hi": 0.9,
+        "bin_lo": 0.8,
+        "gap": null,
+        "mean_confidence": null,
+        "n": 0
+      },
+      {
+        "accuracy": 0.7486,
+        "bin_hi": 1.0,
+        "bin_lo": 0.9,
+        "gap": 0.1714,
+        "mean_confidence": 0.92,
+        "n": 179
+      }
+    ],
+    "risk_coverage": [
+      {
+        "coverage": 1.0,
+        "error_rate": 0.2556,
+        "errors": 69,
+        "n_auto": 270,
+        "threshold": 0.0
+      },
+      {
+        "coverage": 1.0,
+        "error_rate": 0.2556,
+        "errors": 69,
+        "n_auto": 270,
+        "threshold": 0.5
+      },
+      {
+        "coverage": 1.0,
+        "error_rate": 0.2556,
+        "errors": 69,
+        "n_auto": 270,
+        "threshold": 0.6
+      },
+      {
+        "coverage": 0.663,
+        "error_rate": 0.2514,
+        "errors": 45,
+        "n_auto": 179,
+        "threshold": 0.7
+      },
+      {
+        "coverage": 0.663,
+        "error_rate": 0.2514,
+        "errors": 45,
+        "n_auto": 179,
+        "threshold": 0.8
+      },
+      {
+        "coverage": 0.663,
+        "error_rate": 0.2514,
+        "errors": 45,
+        "n_auto": 179,
+        "threshold": 0.9
+      },
+      {
+        "coverage": 0.0,
+        "error_rate": null,
+        "errors": 0,
+        "n_auto": 0,
+        "threshold": 0.95
+      }
+    ]
+  },
+  "backend": "mock",
+  "backend_is_stub": true,
+  "input": {
+    "accuracy_of_items_with_confidence": 0.6113,
+    "aurc": 0.303264,
+    "available": true,
+    "ece": 0.177556,
+    "n": 265,
+    "n_with_confidence": 265,
+    "reliability": [
+      {
+        "accuracy": null,
+        "bin_hi": 0.1,
+        "bin_lo": 0.0,
+        "gap": null,
+        "mean_confidence": null,
+        "n": 0
+      },
+      {
+        "accuracy": null,
+        "bin_hi": 0.2,
+        "bin_lo": 0.1,
+        "gap": null,
+        "mean_confidence": null,
+        "n": 0
+      },
+      {
+        "accuracy": null,
+        "bin_hi": 0.3,
+        "bin_lo": 0.2,
+        "gap": null,
+        "mean_confidence": null,
+        "n": 0
+      },
+      {
+        "accuracy": null,
+        "bin_hi": 0.4,
+        "bin_lo": 0.3,
+        "gap": null,
+        "mean_confidence": null,
+        "n": 0
+      },
+      {
+        "accuracy": null,
+        "bin_hi": 0.5,
+        "bin_lo": 0.4,
+        "gap": null,
+        "mean_confidence": null,
+        "n": 0
+      },
+      {
+        "accuracy": 0.5781,
+        "bin_hi": 0.6,
+        "bin_lo": 0.5,
+        "gap": 0.0119,
+        "mean_confidence": 0.59,
+        "n": 64
+      },
+      {
+        "accuracy": null,
+        "bin_hi": 0.7,
+        "bin_lo": 0.6,
+        "gap": null,
+        "mean_confidence": null,
+        "n": 0
+      },
+      {
+        "accuracy": 0.4342,
+        "bin_hi": 0.8,
+        "bin_lo": 0.7,
+        "gap": 0.3558,
+        "mean_confidence": 0.79,
+        "n": 76
+      },
+      {
+        "accuracy": 0.736,
+        "bin_hi": 0.9,
+        "bin_lo": 0.8,
+        "gap": 0.154,
+        "mean_confidence": 0.89,
+        "n": 125
+      },
+      {
+        "accuracy": null,
+        "bin_hi": 1.0,
+        "bin_lo": 0.9,
+        "gap": null,
+        "mean_confidence": null,
+        "n": 0
+      }
+    ],
+    "risk_coverage": [
+      {
+        "coverage": 1.0,
+        "error_rate": 0.3887,
+        "errors": 103,
+        "n_auto": 265,
+        "threshold": 0.0
+      },
+      {
+        "coverage": 1.0,
+        "error_rate": 0.3887,
+        "errors": 103,
+        "n_auto": 265,
+        "threshold": 0.5
+      },
+      {
+        "coverage": 0.7585,
+        "error_rate": 0.3781,
+        "errors": 76,
+        "n_auto": 201,
+        "threshold": 0.6
+      },
+      {
+        "coverage": 0.7585,
+        "error_rate": 0.3781,
+        "errors": 76,
+        "n_auto": 201,
+        "threshold": 0.7
+      },
+      {
+        "coverage": 0.4717,
+        "error_rate": 0.264,
+        "errors": 33,
+        "n_auto": 125,
+        "threshold": 0.8
+      },
+      {
+        "coverage": 0.0,
+        "error_rate": null,
+        "errors": 0,
+        "n_auto": 0,
+        "threshold": 0.9
+      },
+      {
+        "coverage": 0.0,
+        "error_rate": null,
+        "errors": 0,
+        "n_auto": 0,
+        "threshold": 0.95
+      }
+    ]
+  },
+  "label": "PLUMBING CHECK ONLY. The MockBackend is a deterministic keyword stub, not Jev and not an LLM; its 'confidence' is a function of keyword counts, not a probability. These numbers verify that the harness, cascade, metrics and audit trail work. They say nothing about how Jev or any model performs.",
+  "meta": {
+    "environment": "OFFLINE: no model, no network, no API key; synthetic data only",
+    "git_commit": "b97929a",
+    "platform": "macOS-26.7.1",
+    "python": "3.14.7",
+    "seed": 0
+  },
+  "note": "risk_coverage: coverage = share of ALL items decided automatically at confidence >= threshold; error_rate = share wrong among those"
+}

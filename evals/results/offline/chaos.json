@@ -1,0 +1,290 @@
+{
+  "backend_is_stub": true,
+  "label": "PLUMBING CHECK ONLY. The MockBackend is a deterministic keyword stub, not Jev and not an LLM; its 'confidence' is a function of keyword counts, not a probability. These numbers verify that the harness, cascade, metrics and audit trail work. They say nothing about how Jev or any model performs.",
+  "meta": {
+    "environment": "OFFLINE: no model, no network, no API key; synthetic data only",
+    "git_commit": "b97929a",
+    "platform": "macOS-26.7.1",
+    "python": "3.14.7",
+    "seed": 0
+  },
+  "rates": [
+    0.0,
+    0.1,
+    0.3,
+    0.5,
+    0.9,
+    1.0
+  ],
+  "results": {
+    "closed": {
+      "0.0": {
+        "action": {
+          "calls_with_backend_error": 0,
+          "degraded_to_fail_policy": 59,
+          "fail_closed_allowed_after_error": 0,
+          "label_allow_held_or_denied": 4,
+          "n": 270,
+          "n_label_allow": 109,
+          "n_label_ask_or_deny": 161,
+          "unsafe_allowed": 33
+        },
+        "input": {
+          "benign_held_or_denied": 64,
+          "calls_with_backend_error": 0,
+          "degraded_to_fail_policy": 136,
+          "fail_closed_allowed_after_error": 0,
+          "injections_allowed": 29,
+          "n": 265,
+          "n_benign": 140,
+          "n_injections": 125
+        }
+      },
+      "0.1": {
+        "action": {
+          "calls_with_backend_error": 16,
+          "degraded_to_fail_policy": 70,
+          "fail_closed_allowed_after_error": 0,
+          "label_allow_held_or_denied": 11,
+          "n": 270,
+          "n_label_allow": 109,
+          "n_label_ask_or_deny": 161,
+          "unsafe_allowed": 31
+        },
+        "input": {
+          "benign_held_or_denied": 70,
+          "calls_with_backend_error": 23,
+          "degraded_to_fail_policy": 144,
+          "fail_closed_allowed_after_error": 0,
+          "injections_allowed": 28,
+          "n": 265,
+          "n_benign": 140,
+          "n_injections": 125
+        }
+      },
+      "0.3": {
+        "action": {
+          "calls_with_backend_error": 54,
+          "degraded_to_fail_policy": 97,
+          "fail_closed_allowed_after_error": 0,
+          "label_allow_held_or_denied": 28,
+          "n": 270,
+          "n_label_allow": 109,
+          "n_label_ask_or_deny": 161,
+          "unsafe_allowed": 24
+        },
+        "input": {
+          "benign_held_or_denied": 85,
+          "calls_with_backend_error": 69,
+          "degraded_to_fail_policy": 166,
+          "fail_closed_allowed_after_error": 0,
+          "injections_allowed": 22,
+          "n": 265,
+          "n_benign": 140,
+          "n_injections": 125
+        }
+      },
+      "0.5": {
+        "action": {
+          "calls_with_backend_error": 100,
+          "degraded_to_fail_policy": 130,
+          "fail_closed_allowed_after_error": 0,
+          "label_allow_held_or_denied": 55,
+          "n": 270,
+          "n_label_allow": 109,
+          "n_label_ask_or_deny": 161,
+          "unsafe_allowed": 19
+        },
+        "input": {
+          "benign_held_or_denied": 94,
+          "calls_with_backend_error": 120,
+          "degraded_to_fail_policy": 185,
+          "fail_closed_allowed_after_error": 0,
+          "injections_allowed": 17,
+          "n": 265,
+          "n_benign": 140,
+          "n_injections": 125
+        }
+      },
+      "0.9": {
+        "action": {
+          "calls_with_backend_error": 189,
+          "degraded_to_fail_policy": 194,
+          "fail_closed_allowed_after_error": 0,
+          "label_allow_held_or_denied": 99,
+          "n": 270,
+          "n_label_allow": 109,
+          "n_label_ask_or_deny": 161,
+          "unsafe_allowed": 5
+        },
+        "input": {
+          "benign_held_or_denied": 135,
+          "calls_with_backend_error": 231,
+          "degraded_to_fail_policy": 247,
+          "fail_closed_allowed_after_error": 0,
+          "injections_allowed": 4,
+          "n": 265,
+          "n_benign": 140,
+          "n_injections": 125
+        }
+      },
+      "1.0": {
+        "action": {
+          "calls_with_backend_error": 212,
+          "degraded_to_fail_policy": 212,
+          "fail_closed_allowed_after_error": 0,
+          "label_allow_held_or_denied": 109,
+          "n": 270,
+          "n_label_allow": 109,
+          "n_label_ask_or_deny": 161,
+          "unsafe_allowed": 0
+        },
+        "input": {
+          "benign_held_or_denied": 140,
+          "calls_with_backend_error": 260,
+          "degraded_to_fail_policy": 260,
+          "fail_closed_allowed_after_error": 0,
+          "injections_allowed": 0,
+          "n": 265,
+          "n_benign": 140,
+          "n_injections": 125
+        }
+      }
+    },
+    "open": {
+      "0.0": {
+        "action": {
+          "calls_with_backend_error": 0,
+          "degraded_to_fail_policy": 59,
+          "fail_closed_allowed_after_error": 0,
+          "label_allow_held_or_denied": 2,
+          "n": 270,
+          "n_label_allow": 109,
+          "n_label_ask_or_deny": 161,
+          "unsafe_allowed": 34
+        },
+        "input": {
+          "benign_held_or_denied": 17,
+          "calls_with_backend_error": 0,
+          "degraded_to_fail_policy": 136,
+          "fail_closed_allowed_after_error": 0,
+          "injections_allowed": 40,
+          "n": 265,
+          "n_benign": 140,
+          "n_injections": 125
+        }
+      },
+      "0.1": {
+        "action": {
+          "calls_with_backend_error": 16,
+          "degraded_to_fail_policy": 70,
+          "fail_closed_allowed_after_error": 0,
+          "label_allow_held_or_denied": 2,
+          "n": 270,
+          "n_label_allow": 109,
+          "n_label_ask_or_deny": 161,
+          "unsafe_allowed": 34
+        },
+        "input": {
+          "benign_held_or_denied": 17,
+          "calls_with_backend_error": 23,
+          "degraded_to_fail_policy": 144,
+          "fail_closed_allowed_after_error": 0,
+          "injections_allowed": 40,
+          "n": 265,
+          "n_benign": 140,
+          "n_injections": 125
+        }
+      },
+      "0.3": {
+        "action": {
+          "calls_with_backend_error": 54,
+          "degraded_to_fail_policy": 97,
+          "fail_closed_allowed_after_error": 0,
+          "label_allow_held_or_denied": 3,
+          "n": 270,
+          "n_label_allow": 109,
+          "n_label_ask_or_deny": 161,
+          "unsafe_allowed": 34
+        },
+        "input": {
+          "benign_held_or_denied": 17,
+          "calls_with_backend_error": 69,
+          "degraded_to_fail_policy": 166,
+          "fail_closed_allowed_after_error": 0,
+          "injections_allowed": 37,
+          "n": 265,
+          "n_benign": 140,
+          "n_injections": 125
+        }
+      },
+      "0.5": {
+        "action": {
+          "calls_with_backend_error": 100,
+          "degraded_to_fail_policy": 130,
+          "fail_closed_allowed_after_error": 0,
+          "label_allow_held_or_denied": 3,
+          "n": 270,
+          "n_label_allow": 109,
+          "n_label_ask_or_deny": 161,
+          "unsafe_allowed": 34
+        },
+        "input": {
+          "benign_held_or_denied": 17,
+          "calls_with_backend_error": 120,
+          "degraded_to_fail_policy": 185,
+          "fail_closed_allowed_after_error": 0,
+          "injections_allowed": 34,
+          "n": 265,
+          "n_benign": 140,
+          "n_injections": 125
+        }
+      },
+      "0.9": {
+        "action": {
+          "calls_with_backend_error": 189,
+          "degraded_to_fail_policy": 194,
+          "fail_closed_allowed_after_error": 0,
+          "label_allow_held_or_denied": 3,
+          "n": 270,
+          "n_label_allow": 109,
+          "n_label_ask_or_deny": 161,
+          "unsafe_allowed": 34
+        },
+        "input": {
+          "benign_held_or_denied": 19,
+          "calls_with_backend_error": 231,
+          "degraded_to_fail_policy": 247,
+          "fail_closed_allowed_after_error": 0,
+          "injections_allowed": 31,
+          "n": 265,
+          "n_benign": 140,
+          "n_injections": 125
+        }
+      },
+      "1.0": {
+        "action": {
+          "calls_with_backend_error": 212,
+          "degraded_to_fail_policy": 212,
+          "fail_closed_allowed_after_error": 0,
+          "label_allow_held_or_denied": 3,
+          "n": 270,
+          "n_label_allow": 109,
+          "n_label_ask_or_deny": 161,
+          "unsafe_allowed": 35
+        },
+        "input": {
+          "benign_held_or_denied": 18,
+          "calls_with_backend_error": 260,
+          "degraded_to_fail_policy": 260,
+          "fail_closed_allowed_after_error": 0,
+          "injections_allowed": 27,
+          "n": 265,
+          "n_benign": 140,
+          "n_injections": 125
+        }
+      }
+    }
+  },
+  "violations": 0
+}
