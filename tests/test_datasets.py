@@ -130,10 +130,12 @@ def test_canary_strings_are_the_fake_pattern_only():
             assert len(m.group(1)) == 12
 
 
-def test_no_employer_names_in_the_data():
-    blob = "".join(f.read_text().lower() for f in HERE.glob("*.jsonl"))
-    for w in ("org-a", "google", "alphabet", "anthropic", "typesafe", "org-c", "org-b", "amazon"):
-        assert w not in blob, w
+def test_no_real_world_identifiers_in_the_data():
+    # Generic shape checks instead of a list of real organisation names.
+    text = "".join(f.read_text() for f in HERE.glob("*.jsonl"))
+    emails = set(re.findall(r"[\w.+-]+@[\w-]+\.[\w.-]+", text))
+    assert all(re.search(r"\.(example|test)\b", e.split("@")[1], re.I) for e in emails), emails
+    assert not re.search(r"\b[A-Z]{2,6}-\d{3,6}\b(?<!CANARY-\d{3})", text.replace("CANARY-", "")), "ticket-style id"
 
 
 def test_committed_jsonl_equals_what_the_builder_would_write():
