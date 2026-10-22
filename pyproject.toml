@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "peephole"
+version = "0.1.0"
+description = "Look before you open the door: a typed, calibrated semantic gate for agent inputs and actions (Jev), with an honest evaluation harness (built and offline-tested, not run live)"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Navi Sohi" }]
+dependencies = [
+  "pydantic>=2.5",
+  "opentelemetry-api>=1.20",
+]
+
+[project.optional-dependencies]
+# JevBackend (TypeSafe Jev through Pydantic AI) and LLMBackend (Claude Haiku). Both import lazily.
+# pydantic-ai needs Python 3.10+, so on 3.9 the offline core still works and these backends refuse to build.
+jev = ["pydantic-ai-slim[typesafe]>=1.0; python_version >= '3.10'"]
+llm = ["pydantic-ai-slim[anthropic]>=1.0; python_version >= '3.10'"]
+dev = [
+  "pytest>=8",
+  "opentelemetry-sdk>=1.20",
+  "pydantic-ai-slim[anthropic]>=1.0; python_version >= '3.10'",
+]
+
+[project.scripts]
+peephole = "peephole.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+peephole = ["datasets/*.jsonl"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = [".", "src"]
+addopts = "-q"
